@@ -1,0 +1,319 @@
+
+
+.shop-wrapper {
+    padding-top: 30px;
+    background: $grayBackground;
+    font-size: $smallText;
+}
+
+.shop-div-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.shop-full-width-container {
+    width: 100%;
+    height: 100px;
+    background: red;
+}
+
+.shop-submit-container {
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 12px;
+    box-shadow: 0px 35px 10px -35px black;
+}
+
+.starIcon {
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+
+.formBtn {
+    border-radius: 15px;
+    border: none;
+    background: #739100;
+    color: white;
+    padding: 5px 15px;
+}
+
+.voucherInput {
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid lightgray;
+    padding: 3px 10px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.shop-total-form {
+    display: flex;
+    height: 90px;
+    background: white;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 10px 10px 20px;
+    align-items: center;
+}
+
+.shop-total-form-info {
+    width: 70%;
+    font-family: 'montserrat', cursive;
+    color: $darkGrayText;
+    font-size: .8rem;
+}
+
+.shop-total-form-price {
+    width: 30%;
+    color: $darkGrayText;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center;
+        span {
+            font-size: 1rem;
+            margin-right: 5px;
+        }
+}
+
+.shop-total-form-shipping {
+    width: 70%;
+    font-family: 'montserrat', cursive;
+    color: $shopGreen;
+    font-size: .8rem;
+}
+
+.shop-total-form-shipPrice {
+    width: 30%;
+    color: $shopGreen;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center;
+        span {
+            font-size: 1rem;
+            margin-right: 5px;
+        }
+}
+
+.shop-total-price {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background: white;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 10px 10px 20px;
+}
+
+.shop-total-price-title {
+    width: 70%;
+    color: $darkGrayText;
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+.shop-total-price-total {
+    width: 30%;
+    color: $darkGrayText;
+    font-size: 1.25rem;
+    font-weight: 100;
+    text-align: center;
+        span {
+            font-size: 1rem;
+            margin-right: 5px;
+        }
+}
+
+.shop-cart-container {
+    width: 100%;
+}
+
+.shop-items-container {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid $headlineColor;
+    background: #fff;
+}
+
+.shop-items-image {
+    width: 90px;
+    height: 90px;
+    background: yellow;
+}
+
+.shop-cart-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    p {
+        color: $darkGrayText;
+    }
+}
+
+.shop-cart-buttons-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+        span {
+            position: absolute;
+            bottom: 7px;
+            right: 36px;
+        }
+}
+
+.shop-cart-quantity {
+    margin: 6px 6px 0;
+    padding-top: 3px;
+    text-align: center;
+    width: 35px;
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.shop-contact-container {
+    width: 100%;
+    background: lightblue;
+}
+
+.form-title {
+    background: white;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.6rem;
+    color: $darkGrayText;
+    font-weight: 100;
+    padding: 25px 0 25px 20px;
+}
+
+.formbox {
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px 10px 20px;
+    display: flex;
+    align-items: center;
+    // padding-left: 20px;
+    background: white;
+    label {
+        width: 100px;
+        margin-right: 10px;
+        font-size: $smallText;
+        color: $darkGrayText;
+    }
+}
+
+.formInput {
+    background: rgba(212, 212, 212, 0.3);
+    border-radius: 15px;
+    border: 2px solid lightgray;
+    outline: none;
+    text-align: center;
+    line-height: 25px;
+    width: 190px;
+    transition: all .2s;
+}
+
+.shop-confirmation-container {
+    width: 100%;
+    background: white;
+    border-top: 1px solid lightgray;
+    margin-bottom: 30px;
+}
+
+.shop-confirm-ship-container {
+    text-align: center;
+    padding: 20px;
+    font-size: $smallText;
+    color: $darkGrayText;
+        input {
+            margin: 3px 5px;
+        }
+}
+
+.shop-confirm-phoneEmail-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all .2s;
+        p {
+            padding-top: 10px;
+        }
+        label {
+            width: 100px;
+            margin-right: 15px;
+            font-size: $smallText;
+            color: $darkGrayText;
+        }
+        span {
+            margin-left: 5px;
+        }
+}
+
+
+.shop-confirm-continue-container {
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 20px;
+}
+
+.shop-confirm-terms-container {
+
+    padding: 0 0 10px 20px;
+        span {
+            margin-left: 5px;
+        }
+}
+
+.shop-paymentDetails-container {
+    width: 100%;
+    padding: 25px 0 25px 20px;
+    background: #e6e6e6;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 550px){
+    .shop-div-wrapper {
+        width: 95%;
+    }
+
+    .formInput {
+        width: 250px;
+    }
+
+    .shop-confirm-phoneEmail-container {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 768px){
+    .formbox {
+        padding-left: 40px;
+        label {
+            margin-right: 15px;
+        }
+    }
+
+    .shop-confirm-pad-left {
+        padding-left: 40px;
+    }
+
+    .form-title {
+        padding-left: 40px;
+    }
+
+    .shop-confirm-phoneEmail-container {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .shop-confirm-phoneEmail-container {
+        width: 50%;
+    }
+}

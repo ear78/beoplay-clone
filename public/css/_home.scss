@@ -1,0 +1,463 @@
+
+
+/*////////////////////////////////////
+/* TOP SECTION OF HOME PAGE
+////////////////////////////////////*/
+
+.home-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-inner-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home-hero-top {
+    position: relative;
+    background-image: url("../../img/frontpage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -100px;
+    width: 100%;
+    height: 325px;
+    margin-bottom: -6px;
+    transition: all .3s;
+}
+
+.home-hero-img {
+    width: 100%;
+    height: 300px;
+}
+
+.home-hero-text-container {
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    width: 95%;
+    color: white;
+    padding: 5px;
+    transition: all .2s;
+        h2 {
+            font-size: 1.5rem;
+            text-align: center;
+            width: 250px;
+            margin: 0 auto 5px;
+        }
+        h3 {
+            font-size: 1.125rem;
+            text-align: center;
+            margin: 0 auto 15px;
+        }
+}
+
+.home-firstrow-pic-300-container {
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.hero-price-button-container {
+    width: 255px;
+    margin: 70px auto 0;
+}
+
+.home-collection-container {
+    background-color: #f1f1f1;
+    padding: 30px 0 0;
+}
+
+.home-collection-container-lifestyle {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 30px 0 0;
+}
+
+.home-collection-container-industrial {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 30px 0 0;
+}
+
+.home-collection-container-desktop {
+    display: none;
+    transition: all .3s;
+}
+
+.home-collection-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0 30px 0;
+    // width: 630px;
+    // width: 100%;
+    // margin: 0 auto;
+    // transition: transform .3s;
+    // border: 2px solid black;
+    // overflow: hidden;
+    // transition: all .4s;
+}
+
+.home-collection-top2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 0 30px 0;
+    // width: 630px;
+    // width: 100%;
+    // margin: 0 auto;
+    // transition: transform .3s;
+    // border: 2px solid black;
+    // overflow: hidden;
+    // transition: all .4s;
+}
+
+
+.home-collection-banner {
+    max-width: 630px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    // background-image: url("../../img/AW16_630x300.jpg");
+    background-position: -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .4s;
+}
+
+.collection-subtitle {
+    padding: 20px;
+}
+
+// .home-collection-top:hover .home-collection-banner {
+//     transform: scale(1.025);
+// }
+
+.home-collection-subtitle {
+    position: relative;
+    padding: 20px 10px 55px;
+}
+
+.home-collection-subtitle-title {
+    width: 100%;
+}
+
+.home-collection-subtitle-para {
+    display: none;
+    width: 65%;
+}
+
+.home-collection-store-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.home-collection-store-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+/*////////////////////////////////////
+/* POPULAR PRODUCTS MENU MID PAGE
+////////////////////////////////////*/
+
+.popular-products-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background: #f1f1f1;
+}
+
+/*////////////////////////////////////
+/* MIDDLE SECTIONS GRIDS
+////////////////////////////////////*/
+
+.home-middle-picture-container {
+    display: flex;
+    justify-content: center;
+    background: #f1f1f1;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.home-middle-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8rem;
+    background: #f1f1f1;
+    padding: 25px 0 50px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.home-middle-menu-divider {
+    padding-top: 40px;
+}
+
+.home-middle-divider-container {
+    display: flex;
+}
+
+/* FOUR PIC CONTAINER /////////////////////*/
+
+.home-fourpic-container {
+
+    max-width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.home-fourpic-section-container,
+.home-middle-section-container {
+    background-color: #f1f1f1;
+}
+
+.home-fourpic-section-container {
+    padding-top: 0px;
+}
+
+
+.home-collection-lastpic-container {
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 0 30px 0;
+}
+
+/*////////////////////////////////////
+/* SMALL MOBILE VIEW ADJUSTMENTS FOR GRID
+////////////////////////////////////*/
+
+.home-mobile-pic-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.home-mobile-pic-300-container {
+    position: relative;
+    width: 49%;
+}
+
+.home-sidepic-container-desktop {
+    display: none;
+}
+
+.home-lastpic-300-container {
+    display: none;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+
+
+/*//////////////////////////////////
+// MEDIA QUERIES
+//////////////////////////////////*/
+
+@media (min-width: 768px) {
+    .home-hero-top {
+        background-position: center;
+    }
+
+    .home-hero-text-container {
+        width: 40%;
+    }
+
+    .hero-price-button-container {
+        margin-top: 55px;
+    }
+
+    .home-collection-store-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-collection-store-container2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-collection-subtitle-para {
+        display: inherit;
+    }
+
+    .home-collection-subtitle {
+        padding: 20px;
+    }
+
+    .collection-container {
+        display: block;
+    }
+
+    .home-middle-picture-container {
+        padding-top: 25px;
+        height: 850px;
+        margin-bottom: 30px;
+    }
+
+    .home-mobile-pic-container {
+        display: none;
+    }
+
+    .home-collection-container-lifestyle {
+        display: initial;
+    }
+
+    .home-collection-container-industrial {
+        display: initial;
+    }
+
+    .home-fourpic-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .home-collection-lastpic-container {
+        display: flex;
+    }
+}
+
+@media(min-width: 1000px){
+    .home-hero-top {
+        height: 360px;
+    }
+}
+
+@media (min-width: 1150px) {
+    .home-inner-wrapper {
+        width: 1024px;
+    }
+
+    .home-hero-top {
+        height: 400px;
+    }
+
+    .home-hero-text-container {
+        h2{
+            font-size: 2.125rem;
+            width: 325px;
+        }
+    }
+
+    .home-collection-container {
+        display: none;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .home-collection-store-container {
+        margin: 0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .home-collection-store-container2 {
+        display: none;
+    }
+
+    .home-collection-container-desktop {
+        display: flex;
+        padding: 30px 0 0 0;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    .home-collection-banner {
+        margin: 0 0px;
+        p {
+            width: 53%;
+        }
+    }
+
+    .home-middle-menu {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .home-sidepic-container-desktop {
+        display: initial;
+        // margin-left: 40px;
+        justify-content: space-between;
+    }
+
+    .home-middle-picture-container {
+        padding-top: 25px;
+        height: 850px;
+        justify-content: space-between
+    }
+
+    .popular-products-container {
+        padding-top: 70px;
+    }
+
+    .home-collection-container-lifestyle {
+        display: none;
+        flex-direction: row;
+        align-items: baseline;
+
+    }
+
+    .home-collection-container-industrial {
+        width: 630px;
+        p {
+            width: 55%;
+        }
+    }
+
+    .home-fourpic-section-container {
+        display: none;
+    }
+
+    .home-collection-lastpic-container {
+        justify-content: space-between;
+        margin-top: 50px;
+        p {
+            width: 70%;
+        }
+    }
+
+    .home-lastpic-300-container {
+        display: initial;
+        position: relative;
+        margin-bottom: 30px;
+        max-width: 300px;
+    }
+
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .home-hero-top {
+        height: 450px;
+    }
+
+    .home-hero-text-container {
+        h3 {
+            width: 77%;
+        }
+    }
+
+}

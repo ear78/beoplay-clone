@@ -1,0 +1,171 @@
+
+
+/*//////////////////////////////////
+// CSS EFFECTS
+//////////////////////////////////*/
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: $headlineColor;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.hvr-underline-from-left:hover {
+    cursor: pointer;
+}
+
+/*//////////////////////////////////
+// SPECIFIC STYLES
+//////////////////////////////////*/
+
+.h7,.h3 {
+    background: #d6d6d6;
+}
+
+.applewatch,.h5, .h8, .s3 {
+    background: #4e614e;
+}
+
+.headphones {
+    background-color: #444444;
+}
+
+.h6, .anc {
+    margin: 0 auto;
+}
+
+.insta-logo-pic {
+    position: absolute;
+    top: 0;
+}
+
+.sidepic-container {
+    margin-left: 0px;
+}
+
+
+/*////////////////////////////////////
+/* PIC 300 CONTAINER FOR 300PX IMAGES
+////////////////////////////////////*/
+
+.pic-300-container {
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.pic-300-descbox-title {
+    font-size: .75rem;
+    font-family: montserrat;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.pic-300-descbox {
+    position: relative;
+    background: white;
+    max-width: 100%;
+    padding: 20px 20px 55px 20px;
+}
+
+.pic-300-text {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pic-300-descbox-para {
+    display: none;
+    font-size: .75rem;
+    color: #666;
+    font-weight: 300;
+    width: 50%;
+}
+
+
+/*////////////////////////////////////////////
+// ALTERNATE PICTURE CONTAINER 300PX
+///////////////////////////////////////////*/
+
+.pic-300-container-alt {
+    display: none;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.pic-300-descbox-alt {
+    display: none;
+    position: relative;
+    background: white;
+    max-width: 100%;
+    padding: 20px 20px 55px 20px;
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+
+    .pic-300-descbox {
+        position: relative;
+        background: white;
+        max-width: 300px;
+        height: 100px;
+        padding: 20px 15px 20px 20px;
+    }
+
+    .pic-300-descbox-para {
+        display: block;
+    }
+
+    .pic-300-container-alt {
+        display: initial;
+    }
+
+    .pic-300-descbox-alt {
+        display: block;
+        padding: 20px 15px 20px 20px;
+    }
+
+    .sidepic-container {
+        margin-left: 30px;
+    }
+}
+
+@media(min-width: 1150px) {
+    .sidepic-container {
+        margin-left: 0px;
+    }
+}

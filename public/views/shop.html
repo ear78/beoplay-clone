@@ -1,0 +1,106 @@
+<main class="shop-wrapper">
+    <div class="shop-div-wrapper">
+        <div class="shop-submit-container">
+            <img class="starIcon" ng-src="./img/shop/staricon.png"/>
+            <input class="voucherInput" type="text" value="Voucher Code"/>
+            <button class="formBtn" type="submit" value="submit">Submit</button>
+        </div>
+        <div class="shop-total-container">
+            <div ng-repeat="item in cart track by $index">
+                <div  class="shop-total-form">
+                    <div class="shop-total-form-info">{{item.name}} {{item.color1}}</div>
+                    <div class="shop-total-form-price"><span>usd</span>{{item.total}}</div>
+                </div>
+            </div>
+            <div class="shop-total-price">
+                <div class="shop-total-price-title">Total</div>
+                <div class="shop-total-price-total"><span>USD</span>{{cartTotal.total}}</div>
+            </div>
+        </div>
+        <div class="shop-cart-container">
+            <div class="form-title">
+                <p>1. Cart</p>
+            </div>
+            <div ng-repeat="item in cart track by $index" class="shop-items-container">
+                    <div class="shop-items-image"><img ng-src="{{item.thumb_image}}"/>
+                    </div>
+                    <div class="shop-cart-info">
+                        <p>{{item.name}}</p>
+                        <p>{{item.color}}</p>
+                    </div>
+                    <div class="shop-cart-buttons-container">
+                        <img ng-click="countDown(item);" ng-src="img/buttons/cart-minusbutton.png"/>
+                        <div class="shop-cart-quantity">{{item.quantity}}</div>
+                        <img ng-click="countUp(item)" ng-src="img/buttons/cart-addbutton.png"/>
+                        <span>remove</span>
+                    </div>
+            </div>
+        </div>
+
+        <form id="mainForm" method="post" action="#" >
+            <fieldset>
+                <div class="shop-contact-container">
+                    <div class="form-title">
+                        <p>2 . Contact Info</p>
+                    </div>
+                    <div class="formbox">
+                        <label for="firstName">First Name:</label><input class="formInput" name="firstName" type="text" maxlength="30" size="40" required="required"/>
+                    </div>
+                    <div class="formbox">
+                        <label>Last Name:</label><input class="formInput" type="text" maxlength="30" size="40" required="required"/>
+                    </div>
+                    <div class="formbox">
+                        <label>Address:</label><input class="formInput" type="text" maxlength="40" size="40" required="required"/>
+                    </div>
+                    <div class="formbox">
+                        <label>Addr. Line 2:</label><input class="formInput" type="text" size="40"/>
+                    </div>
+                    <div class="formbox">
+                        <label>ZIP Code:</label><input class="formInput" type="text" size="40" required="required"/>
+                    </div>
+                    <div class="formbox">
+                        <label>City:</label><input class="formInput" type="text" size="40" required="required"/>
+                    </div>
+                    <div class="formbox">
+                        <label>State:</label><input class="formInput" type="text" size="40" required="required"/>
+                    </div>
+                    <div class="formbox">
+                        <label>Shipping Country:</label><input class="formInput" type="text" size="40" required="required" pattern="[a-za-z]{3}"/>
+                    </div>
+                </div>
+
+                <div class="shop-confirmation-container">
+                    <div class="shop-confirm-ship-container shop-confirm-pad-left">
+                        <p>Same Shipping and billing address?</p>
+                        <input type="radio" name="billing" value="yes"/>Yes
+                        <input type="radio" name="billing" value="no"/>No
+                    </div>
+                    <div class="shop-confirm-phoneEmail-container shop-confirm-pad-left">
+                        <label>Phone: </label><input class="formInput" type="text" size="40" required="required"/>
+                        <p class="shop-confirm-phoneEmail-para ">Your registered number is required to process your order.</p>
+                    </div>
+                    <div class="shop-confirm-phoneEmail-container shop-confirm-pad-left">
+                        <label>E-mail: </label><input class="formInput" type="email" size="40" required="required"/>
+                        <p class="shop-confirm-phoneEmail-para ">This is where we'll send your order confirmation.</p>
+                    </div>
+                    <div class="shop-confirm-terms-container shop-confirm-pad-left">
+                        <p class="shop-confirm-phoneEmail-para">All orders shipped via UPS Ground. Rush options not currently available, but coming soon.</p>
+                        <input type="checkbox" required="required"/><span>I agree to terms and conditions for trading with B&O PLAY a/s </span>
+                    </div>
+                    <div class="shop-confirm-continue-container">
+                        <button class="formBtn" type="submit" value="submit">Continue to Payment Method</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+            <div class="shop-paymentDetails-container form-title">
+                <p>3 . Payment Details</p>
+            </div>
+            <div class="shop-paymentDetails-container form-title">
+                <p>3 . Confirm Order</p>
+            </div>
+            <div class="shop-paymentDetails-container form-title">
+                <p>3 . Order Confirmation</p>
+            </div>
+    </div>
+</main>

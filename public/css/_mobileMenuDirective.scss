@@ -1,0 +1,130 @@
+.mobile-menu-container {
+    position: fixed;
+    background: #fff;
+    width: 210px;
+    height: 100%;
+    top: 61px;
+    right: 0;
+    z-index: 10;
+    transform: translate3d(210px,0,0);
+        nav li {
+            padding: 0px 5px 0 20px;
+            list-style-type: none;
+            font-size: 1.125rem;
+            font-weight: 100;
+            color: #666;
+            letter-spacing: .9px;
+        }
+        nav li:after {
+            content: "";
+            display: block;
+            margin: 15px 0px;
+            max-width: 160px;
+            width: 100%;
+            height: 1px;
+            background: #f1f1f1;
+        }
+
+
+}
+
+.mobile-speakers-dropdown-container {
+
+    width: 210px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 73%;
+        }
+        li {
+            width: 65px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            min-width: 121px;
+        }
+        p {
+            font-family: 'montserrat';
+            font-size: .65rem;
+        }
+}
+
+.mobile-headphones-dropdown-container {
+
+    width: 210px;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 73%;
+        }
+        li {
+            width: 65px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            min-width: 121px;
+        }
+        p {
+            font-family: 'montserrat';
+            font-size: .65rem;
+        }
+}
+
+
+
+/*////////////////////////////////////////
+// NG-ANIMATIONS WITH angular
+////////////////////////////////////////*/
+
+
+.fade.ng-enter, .fade.ng-leave {
+  transition: height 400ms, opacity 1000ms ease-in 500ms;
+}
+
+.fade.ng-leave {
+  transition: height 700ms 500ms ease, opacity 600ms;
+}
+
+.fade.ng-enter,
+.fade.ng-leave.ng-leave-active {
+    opacity:0;
+    height: 0;
+
+}
+
+.fade.ng-leave,
+.fade.ng-enter.ng-enter-active {
+    height: 400px;
+    opacity:1;
+}
+
+
+
+/*///////////////////////////////////////
+// MOBILE MENU SIDEBAR
+///////////////////////////////////////*/
+
+.mobile-menu-container.menu-open-add {
+    transition: transform 500ms ease;
+}
+
+.mobile-menu-container.menu-open,
+.mobile-menu-container.menu-open-add-active {
+    transform: translate3d(0px,0px,0px);
+}
+
+.mobile-menu-container.menu-open-remove {
+    transition: transform 500ms ease;
+}
+
+.mobile-menu-container.menu-open-remove-active {
+    transform: translate3d(210px,0px,0px);
+}
